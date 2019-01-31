@@ -1,0 +1,21 @@
+src/main/java/com/his/ServletInitializer.java:6:	Each class should declare at least one constructor
+src/main/java/com/his/ServletInitializer.java:6:	Header comments are required
+src/main/java/com/his/ServletInitializer.java:9:	Parameter 'application' is not assigned and could be declared final
+src/main/java/com/his/ar/service/ARService.java:10:	Header comments are required
+src/main/java/com/his/ar/service/ARService.java:12:	Avoid variables with short names like um
+src/main/java/com/his/ar/service/ARService.java:12:	Public method and constructor comments are required
+src/main/java/com/his/ar/service/ARService.java:12:	Unnecessary modifier 'public' on method 'saveUser': the method is declared in an interface type
+src/main/java/com/his/ar/service/ARService.java:14:	Public method and constructor comments are required
+src/main/java/com/his/ar/service/ARService.java:14:	Unnecessary modifier 'public' on method 'findAllUsers': the method is declared in an interface type
+src/main/java/com/his/ar/service/ARService.java:16:	Public method and constructor comments are required
+src/main/java/com/his/ar/service/ARService.java:16:	Unnecessary modifier 'public' on method 'findAllUsers': the method is declared in an interface type
+src/main/java/com/his/ar/service/ARService.java:18:	Public method and constructor comments are required
+src/main/java/com/his/ar/service/ARService.java:18:	Unnecessary modifier 'public' on method 'findById': the method is declared in an interface type
+src/main/java/com/his/ar/service/ARService.java:21:	Avoid variables with short names like um
+src/main/java/com/his/ar/service/ARService.java:21:	Public method and constructor comments are required
+src/main/java/com/his/ar/service/ARService.java:21:	Unnecessary modifier 'public' on method 'update': the method is declared in an interface type
+src/main/java/com/his/ar/service/ARService.java:23:	Public method and constructor comments are required
+src/main/java/com/his/ar/service/ARService.java:23:	Unnecessary modifier 'public' on method 'findActiveUserByEmailAndPwd': the method is declared in an interface type
+src/main/java/com/his/ar/service/ARService.java:26:	Public method and constructor comments are required
+src/main/java/com/his/ar/service/ARService.java:26:	Unnecessary modifier 'public' on method 'findByEmail': the method is declared in an interface type
+src/main/java/com/his/util/ARConstants.java:3:	The utility class name 'ARConstants' doesn't match '[A-Z][a-zA-Z0-9]+(Utils?|Helper)'
