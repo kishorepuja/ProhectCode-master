@@ -5,12 +5,27 @@ import java.util.Date;
 
 import lombok.Data;
 
+/**
+ * This class is used to bind User Forms data
+ * 
+ * @author Hello
+ *
+ */
 @Data
 public class UserMaster {
 
+	/**
+	 * This is userId
+	 */
 	private Integer userId;
 
+	/**
+	 * This is FirstName
+	 */
 	private String firstName;
+	
+	/**
+	 */
 
 	private String lastName;
 

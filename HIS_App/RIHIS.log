@@ -1,31 +1,31 @@
-2019-01-31 19:58:07.927  INFO 10072 --- [restartedMain] com.his.HealthInsuranceApplication       : Starting HealthInsuranceApplication on DESKTOP-FT8U7A7 with PID 10072 (C:\Users\Hello\git\repository\HIS_App\target\classes started by Hello in C:\Users\Hello\git\repository\HIS_App)
-2019-01-31 19:58:07.931  INFO 10072 --- [restartedMain] com.his.HealthInsuranceApplication       : No active profile set, falling back to default profiles: default
-2019-01-31 19:58:07.992  INFO 10072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-01-31 19:58:07.992  INFO 10072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-01-31 19:58:09.037  INFO 10072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-01-31 19:58:09.126  INFO 10072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80ms. Found 1 repository interfaces.
-2019-01-31 19:58:09.564  INFO 10072 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc770c82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-01-31 19:58:10.012  INFO 10072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
-2019-01-31 19:58:10.035  INFO 10072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-01-31 19:58:10.036  INFO 10072 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
-2019-01-31 19:58:10.045  INFO 10072 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\apache-maven-3.6.0\bin;C:\Users\Hello\AppData\Local\Microsoft\WindowsApps;;G:\Ashok\Softwares\spring-tool-suite-3.9.6.RELEASE-e4.9.0-win32-x86_64\sts-bundle\sts-3.9.6.RELEASE;;.]
-2019-01-31 19:58:11.029  INFO 10072 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2019-01-31 19:58:11.037  INFO 10072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/HIS]    : Initializing Spring embedded WebApplicationContext
-2019-01-31 19:58:11.037  INFO 10072 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3044 ms
-2019-01-31 19:58:11.261  INFO 10072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-01-31 19:58:11.262  WARN 10072 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2019-01-31 19:58:11.638  INFO 10072 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2019-01-31 19:58:11.646  INFO 10072 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-01-31 19:58:11.699  INFO 10072 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2019-02-01 09:45:55.773  INFO 1696 --- [restartedMain] com.his.HealthInsuranceApplication       : Starting HealthInsuranceApplication on DESKTOP-FT8U7A7 with PID 1696 (C:\Users\Hello\git\repository\HIS_App\target\classes started by Hello in C:\Users\Hello\git\repository\HIS_App)
+2019-02-01 09:45:55.777  INFO 1696 --- [restartedMain] com.his.HealthInsuranceApplication       : No active profile set, falling back to default profiles: default
+2019-02-01 09:45:55.843  INFO 1696 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-02-01 09:45:55.843  INFO 1696 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-02-01 09:45:57.235  INFO 1696 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-01 09:45:57.311  INFO 1696 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 1 repository interfaces.
+2019-02-01 09:45:57.692  INFO 1696 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$341e8802] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-01 09:45:58.126  INFO 1696 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2019-02-01 09:45:58.149  INFO 1696 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-02-01 09:45:58.150  INFO 1696 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-02-01 09:45:58.160  INFO 1696 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\apache-maven-3.6.0\bin;C:\Users\Hello\AppData\Local\Microsoft\WindowsApps;;G:\Ashok\Softwares\spring-tool-suite-3.9.6.RELEASE-e4.9.0-win32-x86_64\sts-bundle\sts-3.9.6.RELEASE;;.]
+2019-02-01 09:45:58.445  INFO 1696 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-01 09:45:58.453  INFO 1696 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/HIS]    : Initializing Spring embedded WebApplicationContext
+2019-02-01 09:45:58.453  INFO 1696 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2213 ms
+2019-02-01 09:45:58.616  INFO 1696 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-02-01 09:45:58.617  WARN 1696 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-02-01 09:45:58.870  INFO 1696 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-02-01 09:45:58.877  INFO 1696 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-02-01 09:45:58.929  INFO 1696 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2019-01-31 19:58:11.771  INFO 10072 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
-2019-01-31 19:58:11.776  INFO 10072 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-01-31 19:58:11.918  INFO 10072 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2019-01-31 19:58:12.175  INFO 10072 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
-2019-01-31 19:58:12.188  WARN 10072 --- [restartedMain] org.hibernate.dialect.Oracle9Dialect     : HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
-2019-01-31 19:58:12.192  WARN 10072 --- [restartedMain] org.hibernate.dialect.OracleDialect      : HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
-2019-01-31 19:58:15.678  WARN 10072 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2019-02-01 09:45:58.994  INFO 1696 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-01 09:45:58.997  INFO 1696 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-02-01 09:45:59.166  INFO 1696 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-01 09:45:59.299  INFO 1696 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+2019-02-01 09:45:59.304  WARN 1696 --- [restartedMain] org.hibernate.dialect.Oracle9Dialect     : HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2019-02-01 09:45:59.307  WARN 1696 --- [restartedMain] org.hibernate.dialect.OracleDialect      : HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+2019-02-01 09:46:00.365  WARN 1696 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     create table ar_user_master (
        user_id number(10,0) not null,
         active_sw varchar2(255),
@@ -119,11 +119,20 @@ Caused by: java.sql.SQLSyntaxErrorException: ORA-00955: name is already used by 
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
 	... 39 common frames omitted
 
-2019-01-31 19:58:15.690  INFO 10072 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-01-31 19:58:15.852  INFO 10072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-01-31 19:58:16.308  INFO 10072 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-01-31 19:58:16.681  INFO 10072 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-01-31 19:58:16.728  WARN 10072 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-01-31 19:58:16.802  INFO 10072 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-01-31 19:58:17.944  INFO 10072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/HIS'
-2019-01-31 19:58:17.950  INFO 10072 --- [restartedMain] com.his.HealthInsuranceApplication       : Started HealthInsuranceApplication in 10.706 seconds (JVM running for 12.058)
+2019-02-01 09:46:00.378  INFO 1696 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-01 09:46:00.431  INFO 1696 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-02-01 09:46:00.708  INFO 1696 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-02-01 09:46:01.109  INFO 1696 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-01 09:46:01.151  WARN 1696 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-01 09:46:01.222  INFO 1696 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-02-01 09:46:01.370  INFO 1696 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path '/HIS'
+2019-02-01 09:46:01.373  INFO 1696 --- [restartedMain] com.his.HealthInsuranceApplication       : Started HealthInsuranceApplication in 6.108 seconds (JVM running for 8.041)
+2019-02-01 09:47:24.803  INFO 1696 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/HIS]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-01 09:47:24.804  INFO 1696 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-02-01 09:47:24.815  INFO 1696 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-02-01 09:47:24.865  INFO 1696 --- [http-nio-9090-exec-1] com.his.ar.controller.ARController       : Registation form loading successfull
+2019-02-01 09:59:18.931  INFO 1696 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-02-01 09:59:18.935  INFO 1696 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-02-01 09:59:18.937  INFO 1696 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-02-01 09:59:18.941  INFO 1696 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-02-01 09:59:18.956  INFO 1696 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

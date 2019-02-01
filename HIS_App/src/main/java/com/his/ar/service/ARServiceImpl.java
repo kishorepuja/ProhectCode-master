@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 import com.his.ar.dao.ARUserMasterDao;
 import com.his.ar.entity.ARUserMaster;
 import com.his.ar.model.UserMaster;
-import com.his.util.ARConstants;
+import com.his.util.AppConstants;
 import com.his.util.EmailService;
 import com.his.util.PasswordService;
 
@@ -47,8 +47,8 @@ public class ARServiceImpl implements ARService {
 		ARUserMaster entity = new ARUserMaster();
 
 		// Defaulting case worker as Active
-		um.setActiveSw(ARConstants.STR_Y);
-		um.setCreatedBy(ARConstants.ADMIN);
+		um.setActiveSw(AppConstants.STR_Y);
+		um.setCreatedBy(AppConstants.ADMIN);
 
 		// copying data from model to entity
 		BeanUtils.copyProperties(um, entity);
@@ -67,7 +67,7 @@ public class ARServiceImpl implements ARService {
 			String text;
 			try {
 				text = getRegEmailBody(um);
-				emailService.sendEmail(um.getEmail(), ARConstants.EMAIL_FROM, ARConstants.EMAIL_SUBJECT, text);
+				emailService.sendEmail(um.getEmail(), AppConstants.EMAIL_FROM, AppConstants.EMAIL_SUBJECT, text);
 				logger.debug("Registration email sent successfully");
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -106,16 +106,25 @@ public class ARServiceImpl implements ARService {
 		return pages;
 	}
 
+	/**
+	 * 
+	 */
 	@Override
 	public UserMaster findById(Integer userId) {
 		return null;
 	}
 
+	/**
+	 * 
+	 */
 	@Override
-	public UserMaster update(UserMaster um) {
+	public UserMaster update(UserMaster userMaster) {
 		return null;
 	}
 
+	/**
+	 * 
+	 */
 	@Override
 	public UserMaster findActiveUserByEmailAndPwd(String email, String pwd, String activeSw) {
 		UserMaster um = new UserMaster();
@@ -178,7 +187,7 @@ public class ARServiceImpl implements ARService {
 	public String findByEmail(String email) {
 		logger.debug("finding email existence started");
 		Integer cnt = arUserMasterDao.findByEmail(email);
-		return (cnt >= 1) ? ARConstants.DUPLICATE : ARConstants.UNIQUE;
+		return (cnt >= 1) ? AppConstants.DUPLICATE : AppConstants.UNIQUE;
 	}
 
 }

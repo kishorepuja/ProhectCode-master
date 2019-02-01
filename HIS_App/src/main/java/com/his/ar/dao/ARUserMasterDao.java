@@ -26,7 +26,7 @@ public interface ARUserMasterDao extends JpaRepository<ARUserMaster, Serializabl
 	 * @return ARUserMaster
 	 */
 	@Query("SELECT ar FROM ARUserMaster ar where ar.email=:email and ar.pwd = :pwd and ar.activeSw=:activeSw ")
-	public ARUserMaster findActiveUserByEmailAndPwd(String email, String pwd, String activeSw);
+	ARUserMaster findActiveUserByEmailAndPwd(String email, String pwd, String activeSw);
 
 	/**
 	 * This method is used to check email existence in DB
@@ -35,6 +35,6 @@ public interface ARUserMasterDao extends JpaRepository<ARUserMaster, Serializabl
 	 * @return Integer
 	 */
 	@Query("select count(1) from ARUserMaster ar where ar.email=:emailId")
-	public Integer findByEmail(String emailId);
+	Integer findByEmail(String emailId);
 
 }

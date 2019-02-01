@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.his.ar.entity.ARUserMaster;
 import com.his.ar.model.UserMaster;
 import com.his.ar.service.ARService;
-import com.his.util.ARConstants;
+import com.his.util.AppConstants;
 
 /**
  * This class is used to Handle UserManagerment requests in this application
@@ -93,10 +93,10 @@ public class ARController {
 
 		if (master.getUserId() != null) {
 			// store success msg
-			model.addAttribute(ARConstants.SUCCESS, ARConstants.REG_SUCCESS);
+			model.addAttribute(AppConstants.SUCCESS, AppConstants.REG_SUCCESS);
 		} else {
 			// store error msg
-			model.addAttribute(ARConstants.ERROR, ARConstants.REG_ERROR);
+			model.addAttribute(AppConstants.ERROR, AppConstants.REG_ERROR);
 		}
 		initForm(model);
 		logger.debug("CaseWorker registration completed");
@@ -121,7 +121,7 @@ public class ARController {
 		} else {
 			// In Valid User
 			view = "index";
-			model.addAttribute(ARConstants.ERROR, ARConstants.INVALID_USER);
+			model.addAttribute(AppConstants.ERROR, AppConstants.INVALID_USER);
 		}
 		return view;
 	}
@@ -139,7 +139,7 @@ public class ARController {
 			currentPageNo = Integer.parseInt(pageNo);
 		}
 
-		Page<ARUserMaster> page = arService.findAllUsers(currentPageNo - 1, ARConstants.PAGE_SIZE);
+		Page<ARUserMaster> page = arService.findAllUsers(currentPageNo - 1, AppConstants.PAGE_SIZE);
 		int totalPages = page.getTotalPages();
 		List<ARUserMaster> entities = page.getContent();
 

@@ -14,15 +14,32 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import lombok.Data;
 
+/**
+ * This class is used to map to AR_USER_MASTER table
+ * 
+ * @author Hello
+ *
+ */
+
 @Entity
 @Table(name = "AR_USER_MASTER")
 @Data
 public class ARUserMaster {
 
+	/**
+	 * This variable is used to map with primary key column
+	 */
+	/**
+	 * 
+	 */
 	@Id
 	@GeneratedValue
 	@Column(name = "USER_ID")
 	private Integer userId;
+
+	/**
+	 * This variable is used to map with FIRST_NAME column
+	 */
 
 	@Column(name = "FIRST_NAME")
 	private String firstName;
@@ -61,5 +78,6 @@ public class ARUserMaster {
 
 	@Column(name = "UPDATE_BY")
 	private String updatedBy;
+
 
 }

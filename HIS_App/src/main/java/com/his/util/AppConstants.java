@@ -1,8 +1,21 @@
 package com.his.util;
 
-public class ARConstants {
+/**
+ * This class is used to define all application related constants
+ * 
+ * @author Hello
+ *
+ */
+public class AppConstants {
 
+	/**
+	 * 
+	 */
 	public static final String SUCCESS = "SUCCESS";
+
+	/**
+	 * 
+	 */
 	public static final String REG_SUCCESS = "Registration is successfull";
 
 	public static final String ERROR = "ERROR";
