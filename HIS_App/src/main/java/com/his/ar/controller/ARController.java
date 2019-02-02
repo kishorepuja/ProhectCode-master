@@ -106,6 +106,7 @@ public class ARController {
 
 	/**
 	 * This method is used to check case worker login functionality
+	 * 
 	 * @param um
 	 * @param model
 	 * @return
@@ -139,19 +140,27 @@ public class ARController {
 			currentPageNo = Integer.parseInt(pageNo);
 		}
 
+		//calling Service layer method
 		Page<ARUserMaster> page = arService.findAllUsers(currentPageNo - 1, AppConstants.PAGE_SIZE);
+		
+		//Getting Total Pages required
 		int totalPages = page.getTotalPages();
+		
+		//Getting page specific records
 		List<ARUserMaster> entities = page.getContent();
 
+		//Converting Entity objects Model objects
 		for (ARUserMaster entity : entities) {
 			UserMaster um = new UserMaster();
 			BeanUtils.copyProperties(entity, um);
 			users.add(um);
 		}
 
+		//Storing data in model scope to access in view
 		model.addAttribute("cpn", pageNo);
 		model.addAttribute("tp", totalPages);
 		model.addAttribute("caseWorkers", users);
+		
 		return "viewCaseWorkers";
 	}
 
