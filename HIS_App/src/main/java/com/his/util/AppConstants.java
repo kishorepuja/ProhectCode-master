@@ -32,6 +32,7 @@ public class AppConstants {
 	public static final String UNIQUE = "UNIQUE";
 
 	public static final String STR_Y = "Y";
+	public static final String STR_N = "N";
 	public static final String ADMIN = "Admin";
 
 }

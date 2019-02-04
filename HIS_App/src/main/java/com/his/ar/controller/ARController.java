@@ -131,7 +131,7 @@ public class ARController {
 	 * This method is used to retrieve all case workers
 	 */
 	@RequestMapping(value = "/viewCaseWorkers")
-	public String viewAllCaseWorkers(@RequestParam("cpn") String pageNo, Model model) {
+	public String viewAllCaseWorkers(@RequestParam(name = "cpn", defaultValue = "1") String pageNo, Model model) {
 
 		Integer currentPageNo = 1;
 		List<UserMaster> users = new ArrayList();
@@ -140,27 +140,27 @@ public class ARController {
 			currentPageNo = Integer.parseInt(pageNo);
 		}
 
-		//calling Service layer method
+		// calling Service layer method
 		Page<ARUserMaster> page = arService.findAllUsers(currentPageNo - 1, AppConstants.PAGE_SIZE);
-		
-		//Getting Total Pages required
+
+		// Getting Total Pages required
 		int totalPages = page.getTotalPages();
-		
-		//Getting page specific records
+
+		// Getting page specific records
 		List<ARUserMaster> entities = page.getContent();
 
-		//Converting Entity objects Model objects
+		// Converting Entity objects Model objects
 		for (ARUserMaster entity : entities) {
 			UserMaster um = new UserMaster();
 			BeanUtils.copyProperties(entity, um);
 			users.add(um);
 		}
 
-		//Storing data in model scope to access in view
+		// Storing data in model scope to access in view
 		model.addAttribute("cpn", pageNo);
 		model.addAttribute("tp", totalPages);
 		model.addAttribute("caseWorkers", users);
-		
+
 		return "viewCaseWorkers";
 	}
 
@@ -174,5 +174,53 @@ public class ARController {
 	public @ResponseBody String checkUniqueEmail(@RequestParam(name = "email") String email) {
 		System.out.println("EMail entered : " + email);
 		return arService.findByEmail(email);
+	}
+
+	/**
+	 * This method is used to activate case worker
+	 * @param userId
+	 * @return
+	 */
+	@RequestMapping(value = "/activateCwProfile")
+	public String activateCwProfile(@RequestParam("uid") String userId) {
+		try {
+			if (null != userId && !"".equals(userId)) {
+				int uid = Integer.parseInt(userId);
+				UserMaster model = arService.findById(uid);
+				// making profile as active
+				model.setActiveSw(AppConstants.STR_Y);
+				// updating record
+				arService.update(model);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+
+		return "redirect:viewCaseWorkers";
+	}
+	
+	/**
+	 * This method is used to perform soft delete of case worker
+	 * @param userId
+	 * @return
+	 */
+	@RequestMapping(value = "/deleteCwProfile")
+	public String deleteCwProfile(@RequestParam("uid") String userId) {
+		try {
+			if (null != userId && !"".equals(userId)) {
+				int uid = Integer.parseInt(userId);
+				UserMaster model = arService.findById(uid);
+				// making profile as active
+				model.setActiveSw(AppConstants.STR_N);
+				// updating record
+				arService.update(model);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+
+		return "redirect:viewCaseWorkers";
 	}
 }

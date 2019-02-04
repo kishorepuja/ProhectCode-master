@@ -107,19 +107,29 @@ public class ARServiceImpl implements ARService {
 	}
 
 	/**
-	 * 
+	 * This method is used to fetch CW record using userid
 	 */
 	@Override
 	public UserMaster findById(Integer userId) {
-		return null;
+		ARUserMaster entity = arUserMasterDao.findById(userId).get();
+		UserMaster model = new UserMaster();
+		BeanUtils.copyProperties(entity, model);
+		return model;
 	}
 
 	/**
-	 * 
+	 * This method is used to update CaseWorker record
 	 */
 	@Override
 	public UserMaster update(UserMaster userMaster) {
-		return null;
+		ARUserMaster entity = new ARUserMaster();
+		BeanUtils.copyProperties(userMaster, entity);
+
+		// TODO:Need to fix this issue
+		entity.setDob("");
+
+		arUserMasterDao.save(entity);
+		return userMaster;
 	}
 
 	/**

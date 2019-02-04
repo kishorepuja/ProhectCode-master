@@ -10,7 +10,16 @@
 <title>View Case Workers</title>
 <script>
 	function confirmDelete() {
-		var status = confirm("Are you sure, you want to delete?");
+		var status = confirm("Are you sure, you want to Delete?");
+		if (status) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	function confirmActivate() {
+		var status = confirm("Are you sure, you want to Activate?");
 		if (status) {
 			return true;
 		} else {
@@ -64,11 +73,14 @@ th, td {
 					<td><c:out value="${cw.firstName }" /></td>
 					<td><c:out value="${cw.lastName }" /></td>
 					<td><c:out value="${cw.email }" /></td>
-					<td><a href="editCaseWorker?bid=${cw.userId}"><img
-							src="images/edit.png" width="20" height="20" /></a> &nbsp; &nbsp; <a
-						href="deleteCaseWorker?bid=${book.userId}"><img
-							src="images/delete.png" width="20" height="20"
-							onclick="return confirmDelete()" /> </a>
+					<td><a href="editCWProfile?uid=${cw.userId}">Edit</a> / <c:if
+							test="${cw.activeSw=='Y'}">
+							<a href="deleteCwProfile?uid=${cw.userId}"
+								onclick="return confirmDelete()">Delete</a>
+						</c:if> <c:if test="${cw.activeSw=='N'}">
+							<a href="activateCwProfile?uid=${cw.userId}"
+								onclick="return confirmActivate()">Activate</a>
+						</c:if></td>
 				</tr>
 			</c:forEach>
 		</tbody>
